@@ -1,0 +1,137 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+background: linear-gradient(135deg, #ffffff, #f5f7fa);
+font-family: 'Poppins', sans-serif;
+}
+
+/* Light mode */
+.light {
+  background: #f5f5f5;
+  color: #111;
+}
+/* Dark Mode */
+.dark {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* Layout */
+.container {
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark .navbar {
+  border-color: #333;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.dark .card {
+  background: #1a1a1a;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  text-align: left;
+}
+
+tr {
+  border-top: 1px solid #ddd;
+}
+
+.dark tr {
+  border-color: #333;
+}
+
+/* Colors */
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+
+/* Input */
+input {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.dark button {
+  background: white;
+  color: black;
+}
+
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+button {
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  cursor: pointer;
+}
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
